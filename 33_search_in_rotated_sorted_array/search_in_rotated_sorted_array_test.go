@@ -16,7 +16,7 @@ func TestSearch(t *testing.T) {
 	for _, tc := range testCases {
 		result := Search(tc.nums, tc.target)
 		if result != tc.expected {
-			t.Errorf("SearchInsert(%v, %d) = %d; expected %d", tc.nums, tc.target, result, tc.expected)
+			t.Errorf("Search(%v, %d) = %d; expected %d", tc.nums, tc.target, result, tc.expected)
 		}
 	}
 }

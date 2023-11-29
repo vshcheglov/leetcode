@@ -42,7 +42,7 @@ func TestReverseLinkedList(t *testing.T) {
 		reversedList := ReverseList(inputList)
 		result := toArray(reversedList)
 		if !reflect.DeepEqual(result, tc.expected) {
-			t.Errorf("reverseList(%v) = %v; expected %v", tc.input, result, tc.expected)
+			t.Errorf("ReverseList(%v) = %v; expected %v", tc.input, result, tc.expected)
 		}
 	}
 }
